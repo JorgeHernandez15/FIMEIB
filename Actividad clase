@@ -1,0 +1,71 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMY00kNrDy72s9cK7DwLjT9",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/JorgeHernandez15/FIMEIB/blob/main/Actividad%20clase\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 17,
+      "metadata": {
+        "id": "0b3Qp50xwSRw"
+      },
+      "outputs": [],
+      "source": [
+        "def fibon():\n",
+        "  x= int(input (\"Please enter your number: \"))\n",
+        "  list = [0,1]\n",
+        "  for y in range (x-2):\n",
+        "    list.append(list[y]+list[y+1])\n",
+        "  print (list)\n",
+        "#return list"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "fibon()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xl2Ne2Kw0OfM",
+        "outputId": "f7f535c5-dbbd-4770-9e56-5f1c96f5b75d"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Please enter your number: 8\n",
+            "[0, 1, 1, 2, 3, 5, 8, 13]\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
